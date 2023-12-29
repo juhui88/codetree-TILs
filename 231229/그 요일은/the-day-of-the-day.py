@@ -14,4 +14,4 @@ day1 = countFromNew(m1,d1)
 day2 = countFromNew(m2,d2)
 
 countDays = day2 - day1
-print((countDays + 1) // 7 )
+print(countDays // 7 +1)
