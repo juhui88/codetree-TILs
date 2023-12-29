@@ -1,10 +1,9 @@
 n = int(input())
 nums = list(map(int,input().split()))
 
-sum = 0
-lens = 0
+arr = []
 for i in range(n):
-    if i % 2 ==0:
-        sum += nums[i]
-        lens += 1
-        print(int(sum/lens), end =" ")
+    if i % 2 == 0:
+        arr = nums[:i+1]
+        arr.sort()
+        print(arr[len(arr)//2], end =" ")
