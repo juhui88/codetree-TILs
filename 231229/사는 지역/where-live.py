@@ -15,8 +15,8 @@ for i in range(n):
 idx = 0
 for i, person in enumerate(people):
     if person.name > people[idx].name:
-        target_idx = i
+        idx = i
 
-print("name",people[i].name)
-print("addr",people[i].address)
-print("city",people[i].city)
+print("name",people[idx].name)
+print("addr",people[idx].address)
+print("city",people[idx].city)
