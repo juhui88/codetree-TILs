@@ -2,7 +2,7 @@ days = [31,29,31,30,31,30,31,31,30,31,30,31]
 
 def countFromNew(m,d):
     counts = 0
-    for i in range(m):
+    for i in range(m-1):
         counts += days[i]
     counts += d
     return counts
