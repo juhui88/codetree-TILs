@@ -17,7 +17,7 @@ countDays = day2 - day1
 
 if (countDays < 7):
     print(1)
-elif (countDays %  7 == 0 ):
+elif (countDays %  6 == 0 ):
     print(countDays // 7 + 1)
 else:
     print(countDays // 7)
