@@ -4,7 +4,7 @@ n,k,T = input().split()
 words = []
 for i in range(int(n)):
     word = input()
-    if T in word:
+    if word[:len(T)] == T:
         words.append(word)
 
 words.sort()
