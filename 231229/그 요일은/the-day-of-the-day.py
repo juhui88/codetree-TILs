@@ -1,4 +1,5 @@
 days = [31,29,31,30,31,30,31,31,30,31,30,31]
+dayOfWeek = ["Mon", "Tue" , "Wed", "Thu", "Fri", "Sat", "Sun"]
 
 def countFromNew(m,d):
     counts = 0
@@ -15,9 +16,7 @@ day2 = countFromNew(m2,d2)
 
 countDays = day2 - day1
 
-if (countDays < 7):
-    print(1)
-elif (countDays %  6 == 0 ):
+if A == dayOfWeek[0]:
     print(countDays // 7 + 1)
 else:
     print(countDays // 7)
