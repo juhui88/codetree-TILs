@@ -15,7 +15,9 @@ day2 = countFromNew(m2,d2)
 
 countDays = day2 - day1
 
-if (countDays %  7 == 0 ):
+if (countDays < 7):
+    print(1)
+elif (countDays %  7 == 0 ):
     print(countDays // 7 + 1)
 else:
     print(countDays // 7)
