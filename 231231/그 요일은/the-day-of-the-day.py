@@ -17,7 +17,7 @@ day2 = countFromNew(m2,d2)
 countDays = day2 - day1
 
 
-if countDays % 7 > dayOfWeek.index(A):
+if countDays % 7 >= dayOfWeek.index(A):
     print(countDays // 7 + 1)
 else:
     print(countDays // 7)
