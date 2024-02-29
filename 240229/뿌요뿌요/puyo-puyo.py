@@ -37,4 +37,7 @@ def DFSAll():
                     max_list.append(max_block)
 
 DFSAll()
-print(block_num, max(max_list))
+if block_num == 0:
+    print(0, 0)
+else:
+    print(block_num, max(max_list))
