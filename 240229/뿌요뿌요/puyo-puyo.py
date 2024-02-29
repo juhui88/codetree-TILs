@@ -21,7 +21,6 @@ def DFS(y,x, num):
         y_move = y + dy[i]
         x_move = x + dx[i]
         if in_range(y_move, x_move) and visited[y_move][x_move] == False and graph[y_move][x_move] == num:
-        
             DFS(y_move, x_move, num)
 
 
@@ -34,10 +33,7 @@ def DFSAll():
                 DFS(y,x,graph[y][x])
                 if max_block >= 4:
                     block_num += 1
-                    max_list.append(max_block)
+                max_list.append(max_block)
 
 DFSAll()
-if block_num == 0:
-    print(0, 0)
-else:
-    print(block_num, max(max_list))
+print(block_num, max(max_list))
